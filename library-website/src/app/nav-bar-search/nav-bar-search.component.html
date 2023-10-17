@@ -1,0 +1,12 @@
+<form [formGroup]="searchForm">
+    <input type="text" class="searchTerm" placeholder="What are you looking for?" formControlName="title">
+    <button type="submit" 
+        class="searchButton"
+        (click)="filterProducts()">
+            <fa-icon 
+            class="search-icon"
+            [icon]="faSearch">
+    </fa-icon>
+    </button>
+</form>
+

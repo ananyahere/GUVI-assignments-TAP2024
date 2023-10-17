@@ -1,0 +1,26 @@
+<div class="d-flex flex-column justify-center align-center body">
+  <app-nav-bar 
+    class="header d-flex align-center justify-between"
+    [cartCount]="cartLength"
+  ></app-nav-bar>
+  <app-nav-bar-search
+    class="header search-bar d-flex align-center justify-center"
+    (SearchBooks)="filterBooks($event)"
+  >
+  </app-nav-bar-search>
+  <main class="container d-flex">
+    <div id="root">
+      <app-product 
+        *ngFor="let b of displayBooks" 
+        [book]="b"
+        (AddProductToCart)="addToCart($event)"
+      ></app-product>
+    </div>
+    <app-cart 
+      class="sidebar"
+      [cartInformation]="cartInfo"
+      (DeleteProductFromCart)="removeFromCart($event)"
+    >
+    </app-cart>
+  </main>
+</div>

@@ -1,0 +1,14 @@
+.head{
+    background-color: var(--theme);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--light);
+    text-align: center;
+}
+.footer{
+    margin: 20px 0px;
+    padding: 10px 0p;
+    border-top: 1px solid #333;
+}

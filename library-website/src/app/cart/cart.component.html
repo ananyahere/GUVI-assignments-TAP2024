@@ -1,0 +1,15 @@
+<div class="head"><p>Cart</p></div>
+<div id="cart">
+    <app-cart-item 
+        *ngFor="let product of cartInformation.products" 
+        [book]="product"
+        (DeleteFromCart)="deleteFromCart($event)"
+    ></app-cart-item>
+    <ng-template [ngIf]="cartInformation.products.length === 0">
+        <p>Cart is empty.</p>
+    </ng-template>
+</div>
+<div class="footer d-flex justify-between">
+    <p class="total">Total</p>
+    <p id="total-amount">$ {{cartInformation.amount}}</p>
+</div>

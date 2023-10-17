@@ -1,0 +1,23 @@
+<div class="card mb-5 mb-lg-0">
+  <div class="card-body">
+    <h5 class="card-title text-muted text-uppercase text-center">{{card.type}}</h5>
+    <h6 class="card-price text-center">$ {{card.price}}<span class="period">/month</span></h6>
+    <hr>
+    <ul class="fa-ul"
+      *ngFor="let feature of card.features"
+    >
+      <li
+      [ngClass]="{ 'text-muted': !feature.isEnabled }">
+        <span class="fa-li">
+          <fa-icon 
+            [icon]="feature.isEnabled ? faCheck : faTimes">
+          </fa-icon>
+        </span>
+        {{feature.name}}
+      </li>
+    </ul>
+    <div class="d-grid">
+      <a href="#" class="btn btn-primary text-uppercase">Button</a>
+    </div>
+  </div>
+</div>

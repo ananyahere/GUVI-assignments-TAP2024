@@ -1,0 +1,13 @@
+<div class="card d-flex flex-column justify-between align-center">
+    <div class='card-img d-flex justify-center align-center'>
+        <img class="img" [src]="book.image">
+    </div>
+    <div class='card-content d-flex flex-column justify-between align-center text-center'>
+        <p>{{ book.title }}</p>
+        <p class="price">$ {{ book.price.displayValue }}</p>
+        <button 
+            (click)="addToCart(book)"
+        >Add to cart</button>   
+        <button class="getProductDetailBtn">Product details</button>  
+    </div>
+</div>

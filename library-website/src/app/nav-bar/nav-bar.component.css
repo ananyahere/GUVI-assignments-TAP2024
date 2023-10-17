@@ -1,0 +1,22 @@
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--light);
+}
+.cart{
+    background-color: var(--light);
+    padding: 7px 8px;
+    border-radius: 3px;
+    width: 80px;
+}
+.cart-icon{
+    color: var(--theme);
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    border-radius: 22px;
+    background-color: var(--theme);
+    padding: 6px;
+    color: var(--light);
+}

@@ -1,0 +1,13 @@
+<div class="cart-item d-flex justify-between align-center">
+    <div class='cart-img d-flex justify-center align-center'>
+        <img class='img' [src]="book.image"/>
+    </div>
+    <p style='font-size:12px;'>{{ book.title }}</p>
+    <p style='font-size: 15px; font-weight: bolder;'>$ {{book.price.displayValue}}</p>
+    <fa-icon 
+        class="trash-icon"
+        [icon]="faTrash"
+        (click)="deleteFromCart()"
+    >
+</fa-icon>
+</div>

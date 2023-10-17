@@ -1,0 +1,25 @@
+.cart-item{
+    padding: 10px;
+    background-color: var(--light);
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.cart-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-img .img{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.trash-icon:hover{
+    cursor: pointer;
+    color: #333;
+}

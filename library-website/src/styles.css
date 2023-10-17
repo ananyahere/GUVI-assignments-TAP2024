@@ -1,0 +1,207 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+}
+.body{
+    --theme: #06a131;
+    --light: white;
+}
+/* 
+.header, .categories{
+    background-color: var(--theme);
+    padding: 15px;
+}
+.header{
+    height: 80px;
+    border-radius: 3px 3px 0 0;
+    margin-top: 30px;
+}
+.categories{
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 0 0 3px 3px;
+}
+.categories p{
+    color: var(--light);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 2px;
+}
+.categories p:hover{
+    background: #333;
+} 
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--light);
+}
+*/
+/* .cart{
+    background-color: var(--light);
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.cart .fa-solid{
+    color: var(--theme);
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    border-radius: 22px;
+    background-color: var(--theme);
+    padding: 6px;
+    color: var(--light);
+} */
+/* .container{
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+} */
+#product-detail{
+    max-width: 60%;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 15px;
+}
+/* .sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+} */
+/* .head{
+    background-color: var(--theme);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--light);
+    text-align: center;
+}
+.sidebar .footer{
+    margin: 20px 0px;
+    padding: 10px 0p;
+    border-top: 1px solid #333;
+} */
+/* .card{
+    border: 1px solid var(--theme);
+    border-radius: 5px;
+    padding: 15px;
+}
+.card .card-img, .product-img{
+    width: 100%;
+    max-height: 180px;
+}
+.card .img, .product-img img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.card .card-content{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.card-content .price, .product-info .product-price{
+    font-size: 20px;
+    font-weight: bolder;
+} */
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--theme);
+    padding: 7px 25px;
+    cursor: pointer;
+    color: var(--light);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button:hover{
+    background-color: #333;
+}
+/* .cart-item{
+    padding: 10px;
+    background-color: var(--light);
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.cart-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-img .img{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+} */
+.product-title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.product-info .product-desc{
+    margin: 10px 0;
+    text-align: justify;
+    text-justify: inter-word;  
+}
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+

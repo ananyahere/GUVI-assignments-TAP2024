@@ -1,0 +1,25 @@
+.card{
+    border: 1px solid var(--theme);
+    border-radius: 5px;
+    padding: 15px;
+}
+.card-img{
+    width: 100%;
+    max-height: 180px;
+}
+.img{
+    max-width: 90%;
+    max-height: 90%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.card-content{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.price{
+    font-size: 20px;
+    font-weight: bolder;
+}
