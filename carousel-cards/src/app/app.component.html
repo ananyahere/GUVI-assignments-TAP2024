@@ -2,7 +2,7 @@
     <app-card 
         [images] ="images"
         [autoSlide]="isAutoSlide"
-        [slideInterval]="3000"
+        [slideInterval]="timerInterval"
     >
     </app-card>
     <button
@@ -10,7 +10,7 @@
     >
     {{ isAutoSlide ? 'Stop' : 'Start'}} Autoslide
     </button>
-    <!-- <form class="interval-form" [formGroup]="intervalForm">
+    <form class="interval-form" [formGroup]="intervalForm">
         <input 
             type="number" 
             placeholder="(in ms)" 
@@ -23,5 +23,5 @@
         >
             set
         </button>
-    </form> -->
+    </form>
 </div>

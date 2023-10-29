@@ -22,7 +22,7 @@ export class CardComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {}
   ngOnChanges(changes: SimpleChanges): void {
-    this.setAutoSlideState(changes.autoSlide.currentValue);
+    // this.setAutoSlideState(changes.autoSlide.currentValue);
     /* METHOD 1 */
     // if(this.autoSlide && changes.slideInterval){
     //   console.log("autoSlide", this.autoSlide, " slideInterval(new-value)", changes.slideInterval.currentValue)
@@ -34,12 +34,14 @@ export class CardComponent implements OnInit, OnChanges {
     //   this.setAutoSlideState(changes.autoSlide.currentValue);
     // }
     /* METHOD 2 */
-    // if(changes.slideInterval){
-    //   this.setSliderConfig(this.autoSlide, changes.slideInterval.currentValue)
-    // }
-    // else if(changes.autoSlide){
-    //   this.setSliderConfig(changes.autoSlide.currentValue, this.slideInterval)
-    // }
+    if(changes.slideInterval){
+      console.log("slider clicked")
+      this.setSliderConfig(this.autoSlide, changes.slideInterval.currentValue)
+    }
+    else if(changes.autoSlide){
+      console.log("autoSlide clicked")
+      this.setSliderConfig(changes.autoSlide.currentValue, this.slideInterval)
+    }
   }
   setAutoSlideState(status: boolean): void{
     if(status){
@@ -60,15 +62,25 @@ export class CardComponent implements OnInit, OnChanges {
       clearInterval(this.interval)
   }
   setSliderConfig(status: boolean, timer: number): void{
+    console.log("status", status, "timer", timer)
     if(status){
+      // console.log("status is true")
+      clearInterval(this.interval);
       this.interval = setInterval(()=>{
-        this.onNextClick()
+        this.onNextClick();
+        console.error(this.interval);
       },timer)
     }
     else{
-      clearInterval(this.interval)
+      console.log("interval cleared")
+      clearInterval(this.interval);
+      console.warn(this.interval);
     }
   }
+  /**
+   * 
+   * @param index 
+   */
   selectImage (index:number):void{
     this.selectedIndex = index;
   }
